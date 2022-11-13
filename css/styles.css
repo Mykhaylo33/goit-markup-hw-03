@@ -12,7 +12,7 @@
 /* General styles */
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -22,7 +22,9 @@ body {
   background-color: var(--primary-white-color);
 }
 
-ul {
+.list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -34,7 +36,7 @@ ul {
 /* Logo  */
 
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
 }
 
@@ -54,6 +56,18 @@ ul {
   color: var(--accent-color);
 }
 
+/* header */
+
+.page-header {
+  background-color: tomato;
+}
+
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 /*Nav*/
 
 .nav {
@@ -75,6 +89,22 @@ ul {
   color: var(--accent-color);
 }
 
+/*Hero*/
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--primary-white-color);
+  background-color: var(--secondary-bg-color);
+
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -89,48 +119,44 @@ ul {
   overflow: hidden;
 }
 
-/*Hero*/
-
-.hero-title {
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-
-  color: var(--primary-white-color);
-  background-color: var(--secondary-bg-color);
-}
-
 /* Button */
 
 .button {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+
+  border-radius: 4px;
+  border: 1px solid transparent;
 }
 
 .button.primary {
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  padding: 10px 32px;
 }
 
 .button.primary:hover {
-  background-color: var(--seconadry-accent-color);
   color: var(--primary-white-color);
+  background-color: var(--seconadry-accent-color);
 }
 .button.secondary {
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.03em;
+
   color: var(--secondary-text-color);
   background-color: #f5f4fa;
-  cursor: pointer;
+
+  padding: 6px 25px;
 }
 
 .button.secondary:hover,
