@@ -59,7 +59,7 @@ body {
 /* header */
 
 .page-header {
-  background-color: tomato;
+  outline: 1px solid red;
 }
 
 .conteiner {
@@ -90,33 +90,25 @@ body {
 }
 
 /*Hero*/
+.hero {
+  text-align: center;
+  outline: 1px solid red;
+}
 
 .hero-title {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  padding-top: 200px;
+  padding-bottom: 280px;
   color: var(--primary-white-color);
   background-color: var(--secondary-bg-color);
 
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 /* Button */
@@ -140,8 +132,7 @@ body {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  padding: 10px 32px;
+  padding: 6px 25px;
 }
 
 .button.primary:hover {
@@ -165,14 +156,36 @@ body {
   background-color: var(--accent-color);
 }
 
+/* features */
+
+.features {
+  outline: 1px solid red;
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Uppercase titles */
 
 .uptitle {
   font-size: inherit;
   text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
-
-/* features */
 
 .uptitle.features-title {
   color: var(--secondary-text-color);
@@ -181,6 +194,12 @@ body {
 .features-text {
   line-height: 1.71;
   color: var(--primary-text-color);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.work {
+  outline: 1px solid red;
 }
 
 /* General section title*/
@@ -198,10 +217,13 @@ body {
   line-height: 1.19;
 
   background-color: var(--team-title-bg);
+  outline: 1px solid red;
 }
+
 .team-members__item {
   background: var(--primary-white-color);
 }
+
 .team .team-members-name {
   font-size: inherit;
   font-weight: 500;
