@@ -5,35 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>goit-markup-hw-02</title>
+    <title>goit-markup-hw-03</title>
   </head>
 
   <body class="page">
     <!--header-->
     <header class="page-header">
-      <div class="conteiner">
-        <div>
-          <nav>
-            <!--logo-->
-            <a href="./index.html" class="logo primary link" aria-current="true"><span class="logo-style">Web</span> Studio </a>
-            <!-- nav -->
-            <ul class="nav site-nav list">
-              <li><a href="./index.html" class="link">Студія</a></li>
-              <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-              <li><a href="" class="link">Контакти</a></li>
-            </ul>
-          </nav>
-        </div>
-        <!--contacts-->
-        <div>
-          <ul class="nav contacts-nav list">
-            <li>
-              <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+      <div class="container header-container">
+        <nav class="nav">
+          <!--logo-->
+          <a href="./index.html" class="logo logo__primary link" aria-current="true"> <span class="logo__style">Web </span>Studio </a>
+          <!-- nav -->
+          <ul class="list site-nav">
+            <li class="site-nav__item">
+              <a href="./index.html" class="link site-nav__link">Студія</a>
             </li>
-            <li><a href="tel+380961111111" class="link">+38 096 111 11 11</a></li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="link site-nav__link">Портфоліо</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="" class="link site-nav__link">Контакти</a>
+            </li>
           </ul>
-        </div>
+        </nav>
+        <!--contacts-->
+        <ul class="list contacts-nav">
+          <li>
+            <a href="mailto:info@devstudio.com" class="link contacts-nav__link">info@devstudio.com</a>
+          </li>
+          <li><a href="tel+380961111111" class="link contacts-nav__link">+38 096 111 11 11</a></li>
+        </ul>
       </div>
     </header>
 
@@ -52,18 +61,30 @@
         <!-- <h2>Особливості</h2> -->
         <div class="conteiner">
           <ul class="list">
-            <li>
-              <h3 class="uptitle features-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="features-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-            </li>
-            <li>
-              <h3 class="uptitle features-title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="features-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-            </li>
-            <li>
-              <h3 class="uptitle features-title">ПЛАНУВАННЯ</h3>
-              <p class="features-text">Так само консультація з широким активом значною мірою зумовлює.</p>
-            </li>
+            <div>
+              <li>
+                <h3 class="uptitle features-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                <p class="features-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+              </li>
+            </div>
+            <div>
+              <li>
+                <h3 class="uptitle features-title">ПУНКТУАЛЬНІСТЬ</h3>
+                <p class="features-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+              </li>
+            </div>
+            <div>
+              <li>
+                <h3 class="uptitle features-title">ПЛАНУВАННЯ</h3>
+                <p class="features-text">Так само консультація з широким активом значною мірою зумовлює.</p>
+              </li>
+            </div>
+            <div>
+              <li>
+                <h3 class="uptitle features-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                <p class="features-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+              </li>
+            </div>
             <li>
               <h3 class="uptitle features-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="features-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
