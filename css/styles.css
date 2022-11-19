@@ -147,8 +147,8 @@ h6 {
   margin-left: auto;
 }
 
-.contacts-nav__item + .contacts-nav__item {
-  margin-left: 50px;
+.contacts-nav__item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contacts-nav__link {
@@ -166,23 +166,24 @@ h6 {
 
 /*Hero*/
 .hero {
-
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
   background-color: var(--secondary-bg-color);
 }
 
 .hero__container {
-  margin-bottom:0px;
+  margin-bottom: 0px;
   padding: 200px 452px 280px 452px;
   color: var(--primary-white-color);
 }
 
-.hero__title {
-  width: 646px;
+.hero_title {
+  font-weight: 900;
+  width: 696px;
   margin-top: 0;
   margin-bottom: 37px;
 
-  font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
@@ -191,34 +192,34 @@ h6 {
 /* Button */
 
 .button {
-  font-family: 'Roboto', sans-serif;
+  display: inline-block;
   font-size: 16px;
   text-decoration: none;
-  cursor: pointer;
   text-align: center;
 
   border-radius: 4px;
-  border: 1px solid transparent;
-  height: 40px;
-  min-width: 160px;
+  border-color: transparent;
 }
 
 .button__primary {
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  vertical-align: middle;
 
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  padding: 6px 25px;
+  border-radius: 4px;
 }
 
 .button.primary:hover {
   color: var(--primary-white-color);
   background-color: var(--seconadry-accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
-.button.secondary {
+/* .button.secondary {
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.03em;
@@ -233,7 +234,7 @@ h6 {
 .button.secondary:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-}
+} */
 
 /* features */
 
@@ -278,40 +279,60 @@ h6 {
 }
 
 .work {
-  outline: 1px solid red;
-}
-
-/* General section title*/
-.section-title {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--secondary-text-color);
+
+  outline: 1px solid red;
+}
+.work-title {
+  margin-top: 0;
+  padding-bottom: 50px;
+}
+
+.work-list {
+  display: flex;
+  text-align: center;
+}
+
+.about_items {
+  width: calc(100% - 60px);
 }
 
 /* Team section */
 
 .team {
-  font-size: 16px;
-  line-height: 1.19;
-
   background-color: var(--team-title-bg);
   outline: 1px solid red;
 }
 
-.team-members__item {
-  background: var(--primary-white-color);
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
-.team .team-members-name {
+.team-list {
+  display: flex;
+}
+
+.team-items {
+}
+
+.team-name {
   font-size: inherit;
   font-weight: 500;
+  text-align: center;
 
   color: var(--secondary-text-color);
 }
 
-.team .team-members-position {
+.team-position {
   color: var(--primary-text-color);
+  text-align: center;
 }
 /*Foter*/
 
