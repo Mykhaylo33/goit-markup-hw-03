@@ -366,6 +366,7 @@ body {
 }
 
 .address .address-location {
+  padding-top: 0px;
   color: var(--primary-white-color);
 }
 
