@@ -258,7 +258,7 @@ body {
 }
 
 .features-item{
-  width: 270px;
+
 }
 
 .features-item:not(:last-child) {
@@ -272,7 +272,8 @@ body {
 
 .features-text {
   color: var(--primary-text-color);
-  margin: 0;
+  margin-bottom: 0;
+  line-height: 1.71;
 }
 
 /* work */
