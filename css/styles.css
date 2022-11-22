@@ -372,7 +372,7 @@ body {
 .address-item {
   font-style: normal;
   line-height: 1.71;
-
+padding-top: 9px;
   color: var(--footer-text-color);
 }
 
