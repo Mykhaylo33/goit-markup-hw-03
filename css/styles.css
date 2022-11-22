@@ -157,14 +157,15 @@ body {
 /*Hero*/
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
   background-color: var(--secondary-bg-color);
 }
 
 .hero-container {
   margin-bottom: 0;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  
 
   color: var(--primary-white-color);
 }
@@ -223,8 +224,12 @@ body {
 .uptitle {
   margin-top: 0;
 
+
   font-size: inherit;
   font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -250,7 +255,10 @@ body {
 
 .features {
   display: flex;
-  padding-bottom: 94px;
+}
+
+.features-item{
+  width: 270px;
 }
 
 .features-item:not(:last-child) {
@@ -259,16 +267,14 @@ body {
 
 .features-title {
   color: var(--secondary-text-color);
-
   margin-bottom: 10px;
 }
 
-.features__text {
-  margin-bottom: 0;
-
-  line-height: 1.71;
+.features-text {
   color: var(--primary-text-color);
+  margin: 0;
 }
+
 /* work */
 
 .work {
@@ -335,13 +341,13 @@ body {
 /*Foter*/
 
 .page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--secondary-bg-color);
 }
 
-.footer-container {
-  padding-top: 60px;
-  padding-bottom: 0;
-}
+
 
 .logo-secondary {
   display: block;
