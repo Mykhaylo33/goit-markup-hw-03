@@ -363,7 +363,7 @@ body {
 /* address */
 .address {
   display: block;
-  justify-items: flex-start;
+  
 }
 
 .address .address-location {
@@ -372,15 +372,14 @@ body {
 }
 
 .address-item {
+  display: block;
   font-style: normal;
   line-height: 1.71;
-padding-top: 9px;
   color: var(--footer-text-color);
 }
 
 .address-item:not(:last-child) {
   margin-bottom: 9px;
-  margin-top: 0px;
 }
 
 /* Portfolio  */
